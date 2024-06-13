@@ -45,6 +45,7 @@ header {
     display: flex;
     align-items: center;
     height: clamp(4.25rem, 3.2816901408450705rem + 4.131455399061033vw, 7rem);
+    position: relative;
 }
 header .mobile-menu {
     order: -1;
@@ -60,8 +61,9 @@ nav {
     padding: 1.55rem clamp(1.5rem, -1.602112676056338rem + 13.235680751173708vw, 10.31rem);
     background-color: #fff;
     transition: left 0.5s ease-in-out;
+    z-index: 2;
 }
-nav div {
+nav div.mobile-menu {
     margin-bottom: 3.36rem;
 }
 nav ul {
@@ -97,6 +99,77 @@ header .cart span {
     position: absolute;
     top: -25%;
     right: -50%;
+}
+header .cart-display {
+    display: none;
+    position: absolute;
+    top: calc(100% - clamp(0rem, -0.3943661971830987rem + 1.682629107981221vw, 1.12rem));
+    right: calc(-1 * clamp(0.5rem, -1.1725352112676055rem + 7.136150234741784vw, 5.25rem));
+    width: calc(100% + clamp(0rem, 2.704225352112676rem + -3.004694835680751vw, 2rem));
+    max-width: 22.5rem;
+    border-radius: 0.625rem;
+    background: #FFF;
+    box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.50);
+    z-index: 0;
+}
+header .cart-display .title {
+    color: #1D2026;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1.5rem 1.5rem 1.69rem 1.5rem;
+    border-bottom: 0.0625rem solid #E4E9F2;
+}
+header .cart-display .cart-display-empty {
+    display: none;
+    padding: 4.81rem 0 5.31rem;
+    text-align: center;
+    color: #69707D;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+}
+header .cart-display .cart-display-filled {
+    display: none;
+    padding: 1.5rem 1.5rem 2rem;
+}
+header .cart-display .cart-display-filled p {
+    color: #69707D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+header .cart-display .cart-display-filled b {
+    color: #1D2026;
+    font-weight: 700;
+}
+header .cart-display .cart-display-filled .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .cart-display .cart-display-filled .img {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+header .cart-display .cart-display-filled .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+}
+header .cart-display .cart-display-filled .delete:hover {
+    cursor: pointer;
+}
+header button {
+    width: 100%;
+    border-radius: 0.625rem;
+    background: #FF7E1B;
+    border: none;
+    padding: 1.12rem;
+    color: #1D2026;
+    font-family: "Kumbh Sans";
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.63rem;
 }
 header .user-profile {
     width: clamp(1.5rem, 0.9278169014084507rem + 2.4413145539906105vw, 3.125rem);
