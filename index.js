@@ -26,6 +26,7 @@ function updateCartDisplay() {
     if(currentQuantity === 0) {
         cartEmpty.style.display = 'block';
         cartFilled.style.display = 'none';
+        currentCartQuantityDisplay.style.display = 'none';
     } else {
         cartEmpty.style.display = 'none';
         cartFilled.style.display = 'block';
