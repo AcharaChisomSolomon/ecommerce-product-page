@@ -76,7 +76,7 @@ header .cart-display {
     border-radius: 0.625rem;
     background: #FFF;
     box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.50);
-    z-index: 0;
+    z-index: 5;
 }
 header .cart-display .title {
     color: #1D2026;

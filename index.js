@@ -67,3 +67,11 @@ addToCartBtn.addEventListener('click', () => {
     quantityDisplay.textContent = quantity;
     updateCartDisplay();
 });
+
+
+// if any part of the screen is clicked that is not the cart display and the cart display is open, close the cart display
+document.addEventListener('click', (e) => {
+    if(cartDisplay.style.display === 'block' && !e.target.closest('#cart-display') && !e.target.closest('#cart-btn')) {
+        cartDisplay.style.display = 'none';
+    }
+});

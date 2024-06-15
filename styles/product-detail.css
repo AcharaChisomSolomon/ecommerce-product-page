@@ -3,6 +3,7 @@
 .product-info {
     color: var(--product-primary-color);
     padding: var(--product-detail-padding);
+    padding-bottom: 5.5rem;
 }
 .product-info h2 {
     font-size: var(--product-h2-font-size);

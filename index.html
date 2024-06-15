@@ -8,6 +8,7 @@
   <title>E-commerce product page</title>
 
   <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/images.css">
   <link rel="stylesheet" href="./styles/product-detail.css">
 
   <script src="./index.js" defer></script>
@@ -74,7 +75,27 @@
 
   <main>
 
-    <section class="product-image-display"></section>
+    <section class="product-image-display">
+      <div class="product-image">
+        <div class="arrow-previous arrow" id="mobile-prev-arrow">
+          <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
+          </svg>
+        </div>
+        <img src="./images/image-product-1.jpg" alt="product">
+        <div class="arrow-next arrow" id="mobile-next-arrow">
+          <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+      <div class="product-thumbnails">
+        <img src="./images/image-product-1-thumbnail.jpg" alt="product">
+        <img src="./images/image-product-2-thumbnail.jpg" alt="product">
+        <img src="./images/image-product-3-thumbnail.jpg" alt="product">
+        <img src="./images/image-product-4-thumbnail.jpg" alt="product">
+      </div>
+    </section>
 
     <section class="product-details">
       <div class="product-info">
