@@ -43,3 +43,66 @@ body.no-scroll {
     background-color: rgba(0,0,0,0.75);
     z-index: 2;
 }
+.lightbox {
+    display: none;
+}
+
+
+@media screen and (min-width: 920px) {
+    main {
+        max-width: 90rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .main-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 5.63rem 0 8.25rem;
+    }
+
+    .lightbox {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+    }
+    .close-lightbox {
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    .close-lightbox:hover svg path {
+        fill: #ff7e1b;
+    }
+    .lightbox .product-image-display {
+        width: 34.375rem;
+    }
+    .lightbox .product-image img {
+        max-width: 100%;
+        margin-top: 2%;
+    }
+    .lightbox .product-thumbnails {
+        width: 90%;
+        margin: 2.5rem auto 0;
+    }
+
+    #desktop-prev-arrow, #desktop-next-arrow {
+        display: flex;
+    }
+    #desktop-prev-arrow {
+        left: calc(-1 * (3.5rem / 2));
+    }
+    #desktop-next-arrow {
+        right: calc(-1 * (3.5rem / 2));
+    }
+}

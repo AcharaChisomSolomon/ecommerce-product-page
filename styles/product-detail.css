@@ -111,6 +111,12 @@
 
 
 @media screen and (min-width: 920px) {
+    .product-details {
+        align-self: center;
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+
     .product-info {
         max-width: calc((90rem - 10.31rem - 10.31rem) / 2);
         padding: 0 3.43875rem;
