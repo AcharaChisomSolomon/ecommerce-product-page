@@ -75,3 +75,25 @@ document.addEventListener('click', (e) => {
         cartDisplay.style.display = 'none';
     }
 });
+
+
+const productImageUrls = [
+    './images/image-product-1.jpg',
+    './images/image-product-2.jpg',
+    './images/image-product-3.jpg',
+    './images/image-product-4.jpg'
+]
+const mobileProductDisplay = document.getElementById('mobile-product-display');
+const mobilePrevArrow = document.getElementById('mobile-prev-arrow');
+const mobileNextArrow = document.getElementById('mobile-next-arrow');
+let currentImageIndex = 0;
+mobilePrevArrow.addEventListener('click', () => {
+    currentImageIndex--;
+    if(currentImageIndex < 0) currentImageIndex = productImageUrls.length - 1;
+    mobileProductDisplay.src = productImageUrls[currentImageIndex];
+});
+mobileNextArrow.addEventListener('click', () => {
+    currentImageIndex++;
+    if(currentImageIndex >= productImageUrls.length) currentImageIndex = 0;
+    mobileProductDisplay.src = productImageUrls[currentImageIndex];
+});
