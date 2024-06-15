@@ -23,7 +23,7 @@
 }
 
 
-.price {
+.product-info .price {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
