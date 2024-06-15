@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Kumbh Sans';
-    src: url(./fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf) format('truetype');
+    src: url(../fonts/KumbhSans-VariableFont.ttf) format('truetype');
 }
 :root {
     --font-family: 'Kumbh Sans', sans-serif;
@@ -11,6 +11,14 @@
     --nav-mobile-font-weight: 700;
     --nav-text-desktop-color: #69707d;
     --nav-desktop-font-weight: 400;
+
+    --product-primary-color: var(--nav-text-desktop-color);
+    --product-secondary-color: var(--nav-text-mobile-color);
+    --product-detail-padding: 1.5rem clamp(1.5rem, -1.602112676056338rem + 13.235680751173708vw, 10.31rem);
+    --product-h2-font-size: clamp(0.75rem, 0.7279929577464789rem + 0.09389671361502347vw, 0.8125rem);
+    --product-h1-font-size: clamp(1.75rem, 1.397887323943662rem + 1.5023474178403755vw, 2.75rem);
+    --product-h1-margin: clamp(1rem, 0.823943661971831rem + 0.7511737089201878vw, 1.5rem) 0 clamp(1rem, 0.647887323943662rem + 1.5023474178403755vw, 2rem);
+    --product-p-font-size: clamp(0.9375rem, 0.9154929577464789rem + 0.09389671361502347vw, 1rem);
 }
 *, *::before, *::after {
     box-sizing: border-box;

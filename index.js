@@ -27,3 +27,6 @@ cartBtn.addEventListener('click', () => {
     cartDisplay.style.display = 'block';
     cartEmpty.style.display = 'block';
 });
+
+
+const addToCartBtn = document.getElementById('add-to-cart')
